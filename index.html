@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <div class="backdrop">
+        <div class="rules-modal">
+            <div class="rules-modal__header">
+                <h1>RULES</h1>
+                <img src="./images/icon-close.svg" alt="" class="close">
+            </div>
+            <img src="./images/image-rules-bonus.svg" alt="">
+        </div>
+    </div>
+
+    <div class="game">
+        <header>
+            <img src="./images/logo-bonus.svg" alt="">
+            <div class="score">
+                <p>SCORE</p>
+                <h1 class="my-score">0</h1>
+            </div>
+        </header>
+
+        <div class="rps">
+            <div class="top-game">
+                <button class="spock btn" data-item="spock">
+                    <img src="./images/icon-spock.svg" alt="">
+                </button>
+                <button class="scissors btn" data-item="scissors">
+                    <img src="./images/icon-scissors.svg" alt="">
+                </button>
+                <button class="paper btn" data-item="paper">
+                    <img src="./images/icon-paper.svg" alt="">
+                </button>
+            </div>
+
+            <div class="bottom-game">
+                <button class="lizard btn" data-item="lizard">
+                    <img src="./images/icon-lizard.svg" alt="" >
+                </button>
+                <button class="rock btn" data-item="rock">
+                    <img src="./images/icon-rock.svg" alt="">
+                </button>
+            </div>
+        </div>
+
+        <div class="picked">
+            <div class="player">
+                <h2>YOU PICKED</h2>
+                <div class="grow player-wins-1"></div>
+                <div class="grow player-wins-2"></div>
+                <div class="player-picked__item">
+                    <img src="./images/icon-spock.svg" alt="" class="player-img">
+                </div>
+            </div>
+
+            <div class="outcome">
+                <h1 class="result"></h1>
+                <button class="play">PLAY AGAIN</button>
+            </div>
+
+            <div class="computer">
+                <h2>THE HOUSE PICKED</h2>
+                <div class="grow computer-wins-1"></div>
+                <div class="grow computer-wins-2"></div>
+                <div class="computer-picked__item">
+                    <img src="./images/icon-spock.svg" alt="" class="computer-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="rules">Rules</div>
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
